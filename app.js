@@ -8,10 +8,11 @@ function calculate(button) {
     const buttonValue = button.textContent;
 
     if(buttonValue === "CLEAR") {
-        screenDisplay.textContent = ".";
+        screenDisplay.textContent = "0";
         calculation = [];
-        console.log(screenDisplay.innerText)
     } else if(buttonValue === "=") {
+        console.log(acc)
+        //TODO search alternative for eval(); and how to work with float numbers
         screenDisplay.textContent = eval(acc);
     } else {
         calculation.push(buttonValue);
